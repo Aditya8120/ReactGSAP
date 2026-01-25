@@ -1,9 +1,9 @@
 import React from 'react'
 
-const agence = () => {
+const Agence = () => {
   return (
-    <div>agence</div>
+    <div>Agence</div>
   )
 }
 
-export default agence
+export default Agence
