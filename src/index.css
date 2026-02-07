@@ -17,3 +17,7 @@
   font-family: font2;
   src: url('./assets/fonts/Lausanne-500.woff2');
 }
+
+bode{
+  overflow-x: hidden;
+}

@@ -43,10 +43,10 @@ const Agence = () => {
       <div className='h-screen w-screen fixed inset-0'>
         <video autoPlay loop muted className='h-full w-full object-cover opacity-75' src={bgvideo}></video>
       </div>
-      <div ref={imgRef} className='h-[20vw] w-[15vw] z-10 overflow-hidden bg-green-900 absolute rounded-4xl top-40 left-100'>
+      <div ref={imgRef} className='h-[20vw] w-[15vw] z-10 overflow-hidden bg-green-900 absolute rounded-4xl top-40 left-100 shadow-2xs shadow-black'>
         <img ref={urlRef} className='h-full w-full object-cover' src={imageArray[0]} alt="img" />
       </div>
-      <div className='text-white mt-[50vh] relative z-20 leading-[15vw] uppercase text-center text-[18vw]'>
+      <div className='text-white mt-[50vh] relative z-20 leading-[15vw] uppercase text-center text-[18vw] text-shadow-2xs'>
         Emerging <br /> Waves
       </div>
       <div className='pl-[45vw] relative text-4xl z-20 mt-5'>

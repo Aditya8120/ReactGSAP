@@ -2,10 +2,12 @@ import React from 'react'
 import Video from '../components/Home/Video'
 import HomeTT from '../components/Home/HomeTT'
 import HomeBT from '../components/Home/HomeBT'
+import Navbar from '../components/Navbar/Navbar'
 
 const Home = () => {
   return (
     <div>
+      <Navbar/>
       <div className='h-screen w-screen fixed'>
         <Video/>
       </div>
