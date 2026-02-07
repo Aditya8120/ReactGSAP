@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className='flex fixed top-0 w-full items-start justify-between z-4'>
       <div className='h-15 w-15 p-1 rounded-full overflow-hidden'><img className='object-cover' src={logo} alt="" /></div>
       
-      <div className='relative h-10 w-1/6 bg-cyan-300 opacity-40 text-center transition-all rounded-full overflow-hidden ' onMouseEnter={(e)=>{
+      <div className='relative h-10 w-1/6 bg-green-300 opacity-40 text-center transition-all rounded-full overflow-hidden ' onMouseEnter={(e)=>{
         menuBlock.current.style.height = '100%',
         e.currentTarget.style.opacity='100%'
       }} onMouseLeave={(e)=>{
@@ -16,7 +16,7 @@ const Navbar = () => {
         e.currentTarget.style.opacity='40%'
       }}>
       <div className='absolute text-2xl h-full w-full text-white'>MENU</div>
-      <div ref={menuBlock} className='h-0 top-0 w-full transition-all bg-green-500 absolute text-white text-2xl overflow-hidden'>MENU</div>
+      <div ref={menuBlock} className='h-0 top-0 w-full transition-all bg-cyan-500 absolute text-white text-2xl overflow-hidden'>MENU</div>
       </div>
     </div>
   )

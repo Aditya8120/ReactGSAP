@@ -18,6 +18,29 @@
   src: url('./assets/fonts/Lausanne-500.woff2');
 }
 
-bode{
+body{
   overflow-x: hidden;
+}
+
+.moveLink{
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.link:hover .moveLink{
+  height: 100%;
+}
+
+.moveX{
+  animation: moveAnimation 15s linear infinite;
+}
+
+@keyframes moveAnimation{
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(-100%);
+  }
 }
