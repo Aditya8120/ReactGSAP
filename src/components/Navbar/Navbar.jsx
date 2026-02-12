@@ -1,7 +1,10 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import logo from '../../assets/logo.webp'
+import Menu from './Menu'
 
 const Navbar = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false)
 
     const menuBlock = useRef(null)
   return (
@@ -14,10 +17,12 @@ const Navbar = () => {
       }} onMouseLeave={(e)=>{
         menuBlock.current.style.height = '0%',
         e.currentTarget.style.opacity='40%'
-      }}>
+      }} onClick={()=>{setMenuOpen(true)}}>
       <div className='absolute text-2xl h-full w-full text-white'>MENU</div>
       <div ref={menuBlock} className='h-0 top-0 w-full transition-all bg-cyan-500 absolute text-white text-2xl overflow-hidden'>MENU</div>
       </div>
+      
+      <Menu isOpen={menuOpen} closeMenu={()=>{setMenuOpen(false)}}/>
     </div>
   )
 }

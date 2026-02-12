@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Navbar/>
-      <Menu/>
+      {/* <Menu/> */}
       <div className='h-screen w-screen fixed'>
         <Video/>
       </div>
