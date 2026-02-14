@@ -52,8 +52,8 @@ const Menu = ({ isOpen, closeMenu }) => {
             </div>
           </div>
         </div></Link>
-        <Link to='/contact' onClick={closeMenu}><div className='link border-y font-[font1] uppercase text-[6vw] text-center text-white relative'>
-          <h1>Contact</h1>
+        <Link to='/' onClick={closeMenu}><div className='link border-y font-[font1] uppercase text-[6vw] text-center text-white relative'>
+          <h1>Home</h1>
           <div className='moveLink flex top-0 bg-cyan-300 text-black absolute'>
             <div className='moveX flex whitespace-nowrap items-center'>
               <h2>Lorem, ipsum dolor.</h2>
