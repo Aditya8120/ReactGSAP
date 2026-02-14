@@ -8,7 +8,7 @@ import Menu from '../components/Navbar/Menu'
 const Home = () => {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
       {/* <Menu/> */}
       <div className='h-screen w-screen fixed'>
         <Video/>

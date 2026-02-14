@@ -6,7 +6,7 @@ const Menu = ({ isOpen, closeMenu }) => {
 
   const menuRef = useRef(null)
   return (
-    <div ref={menuRef} id='fullMenu' className={`w-full top-0 z-50 absolute bg-black transition-all duration-300 overflow-hidden ${isOpen ? "h-screen py-40" : "h-0 p-0"}`}>
+    <div ref={menuRef} id='fullMenu' className={`w-full top-0 z-40 absolute bg-black transition-all duration-300 overflow-hidden ${isOpen ? "h-screen py-40" : "h-0 p-0"}`}>
       <div className='flex absolute top-0 w-full items-start justify-between z-4'>
         <div className='h-15 w-15 p-1 rounded-full overflow-hidden'><img className='object-cover' src={logo} alt="logo" /></div>
         <div className='h-10 w-10 m-2 rounded-2xl cursor-pointer' onClick={() => {
@@ -18,7 +18,7 @@ const Menu = ({ isOpen, closeMenu }) => {
         </div>
       </div>
       <div id='allLinks'>
-        <Link to='/project' onClick={closeMenu}><div className='link border-t font-[font1] uppercase text-[6vw] text-center text-white relative'>
+        <Link to='/projects' onClick={closeMenu}><div className='link border-t font-[font1] uppercase text-[6vw] text-center text-white relative'>
           <h1>Projects</h1>
           <div className='moveLink flex top-0 bg-cyan-300 text-black absolute'>
             <div className='moveX flex whitespace-nowrap items-center'>
