@@ -8,7 +8,7 @@ const Navbar = () => {
 
     const menuBlock = useRef(null)
   return (
-    <div className='flex fixed top-0 w-full items-start justify-between z-4'>
+    <div className='flex fixed top-0 w-full items-start justify-between z-40'>
       <div className='h-15 w-15 p-1 rounded-full overflow-hidden'><img className='object-cover' src={logo} alt="" /></div>
       
       <div className='relative h-10 w-1/6 bg-green-300 opacity-40 text-center transition-all duration-300 rounded-full overflow-hidden ' onMouseEnter={(e)=>{
