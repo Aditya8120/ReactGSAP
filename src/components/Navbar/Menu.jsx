@@ -18,7 +18,7 @@ const Menu = ({ isOpen, closeMenu }) => {
         </div>
       </div>
       <div id='allLinks'>
-        <Link to='/project'><div className='link border-t font-[font1] uppercase text-[6vw] text-center text-white relative'>
+        <Link to='/project' onClick={closeMenu}><div className='link border-t font-[font1] uppercase text-[6vw] text-center text-white relative'>
           <h1>Projects</h1>
           <div className='moveLink flex top-0 bg-cyan-300 text-black absolute'>
             <div className='moveX flex whitespace-nowrap items-center'>
@@ -35,7 +35,7 @@ const Menu = ({ isOpen, closeMenu }) => {
             </div>
           </div>
         </div></Link>
-        <Link to='/agence'><div className='link border-t font-[font1] uppercase text-[6vw] text-center text-white relative'>
+        <Link to='/agence' onClick={closeMenu}><div className='link border-t font-[font1] uppercase text-[6vw] text-center text-white relative'>
           <h1>Agence</h1>
           <div className='moveLink flex top-0 bg-cyan-300 text-black absolute'>
             <div className='moveX flex whitespace-nowrap items-center'>
@@ -52,7 +52,7 @@ const Menu = ({ isOpen, closeMenu }) => {
             </div>
           </div>
         </div></Link>
-        <Link to='/contact'><div className='link border-y font-[font1] uppercase text-[6vw] text-center text-white relative'>
+        <Link to='/contact' onClick={closeMenu}><div className='link border-y font-[font1] uppercase text-[6vw] text-center text-white relative'>
           <h1>Contact</h1>
           <div className='moveLink flex top-0 bg-cyan-300 text-black absolute'>
             <div className='moveX flex whitespace-nowrap items-center'>
