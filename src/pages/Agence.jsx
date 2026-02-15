@@ -3,6 +3,7 @@ import bgvideo from '../assets/BG/BG_2.mp4'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import HomeBT from '../components/Home/HomeBT';
 
 const Agence = () => {
 
@@ -31,6 +32,7 @@ const Agence = () => {
         pinSpacing: true,
         onUpdate: (elem) => {
           let index = Math.floor(elem.progress * imageArray.length);
+          if(imageArray.length==index){index-=1}
           urlRef.current.src = imageArray[index];
           console.log(Math.floor(elem.progress * imageArray.length))
         }
@@ -40,18 +42,21 @@ const Agence = () => {
 
   return (
     <div className='font-[font2]'>
-      <div className='h-screen w-screen fixed inset-0'>
+      <div className='h-screen w-screen fixed inset-0 z-0'>
         <video autoPlay loop muted className='h-full w-full object-cover opacity-75' src={bgvideo}></video>
       </div>
-      <div ref={imgRef} className='h-[20vw] w-[15vw] z-10 overflow-hidden bg-green-900 absolute rounded-4xl top-40 left-100 shadow-2xs shadow-black'>
+      <div ref={imgRef} className='absolute top-32 lg:top-40 left-0 lg:left-[25%] -translate-x-1/2 lg:translate-x-0 w-[40vw] lg:w-[15vw] aspect-3/4 z-10 overflow-hidden rounded-3xl shadow-md shadow-black'>
         <img ref={urlRef} className='h-full w-full object-cover' src={imageArray[0]} alt="img" />
       </div>
-      <div className='text-white mt-[50vh] relative z-20 leading-[15vw] uppercase text-center text-[18vw] text-shadow-2xs'>
+      <div className='text-white mt-[50vh] relative z-20 leading-[10vw] lg:leading-[15vw] uppercase text-center lg:text-[18vw] text-[10vw] text-shadow-2xs'>
         Emerging <br /> Waves
       </div>
-      <div className='pl-[45vw] relative text-4xl z-20 mt-5'>
+      <div className='pl-[45vw] relative text-xl lg:text-4xl z-20 mt-5'>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Emerging Waves is a reflection of journeys shaped by movement, curiosity, and discovery.
           Inspired by endless coastlines and shifting tides, it celebrates travel as a flow of experiences — where every path leads to new perspectives, quiet escapes, and moments that stay with you long after the waves fade.</p>
+      </div>
+      <div className='relative z-20 my-20 text-white'>
+      <HomeBT/>
       </div>
     </div>
   )

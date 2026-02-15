@@ -3,6 +3,7 @@ import ProjectCards from '../components/Projects/ProjectCards'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import HomeBT from '../components/Home/HomeBT';
 
 const Projects = () => {
 
@@ -50,11 +51,12 @@ const Projects = () => {
       </div>
       <div className='cardsDiv p-2'>
           {projectLinks.map((e)=>(
-            <div className='cards w-full h-100 mb-4 flex gap-4'>
+            <div className='cards w-full h-100 mb-4 flex flex-col lg:flex-row gap-4'>
             <ProjectCards Im1={e.img1} Im2={e.img2}/>
             </div>
           ))}
       </div>
+      <div className='text-white'><HomeBT/></div>
     </div>
   )
 }
