@@ -1,5 +1,5 @@
 import React from 'react'
-import bgvideo from "../../assets/BG/BG_1.mp4"
+import bgvideo from "/BG/BG_1.mp4"
 
 const Video = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import bgvideo from '../assets/BG/BG_2.mp4'
+import bgvideo from '/BG/BG_2.mp4'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
